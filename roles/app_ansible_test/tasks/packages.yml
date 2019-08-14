@@ -1,0 +1,7 @@
+---
+- name: Ensure packages are installed
+  pkgng:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - py36-iocage

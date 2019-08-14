@@ -1,0 +1,5 @@
+---
+- name: ensure jail is created
+  iocage:
+    name: test
+    release: 12.0-RELEASE

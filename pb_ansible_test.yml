@@ -1,0 +1,6 @@
+---
+- name: test ansible
+  hosts: box
+  roles:
+    - app_ansible_test
+  become: true
