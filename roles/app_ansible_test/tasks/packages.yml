@@ -1,7 +1,9 @@
 ---
+- name: Ensure python3.6 is installed
+  raw: pkg install -y python36
+
 - name: Ensure packages are installed
   pkgng:
-    name: "{{ item }}"
+    name:
+      - py36-iocage
     state: present
-  loop:
-    - py36-iocage

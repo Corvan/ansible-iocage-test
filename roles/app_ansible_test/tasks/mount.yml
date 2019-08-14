@@ -1,0 +1,8 @@
+---
+- name: Ensure fdescfs is mounted
+  mount:
+    path: /dev/fd
+    src: fdescfs
+    fstype: fdescfs
+    opts: rw
+    state: mounted
