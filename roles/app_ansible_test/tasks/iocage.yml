@@ -41,3 +41,13 @@
 
 - debug:
     var: destroy
+#
+#- name: Ensure wrong state is recognized
+#  iocage:
+#    name: test
+#    release: 11.2-RELEASE
+#    state: wrong
+#  register: wrongstate
+#
+#- debug:
+#    var: wrong_state
