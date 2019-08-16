@@ -1,5 +1,43 @@
 ---
 - name: ensure jail is created
   iocage:
+    # zpool: zroot
     name: test
-    release: 12.0-RELEASE
+    state: present
+    release: 11.2-RELEASE
+    properties:
+      boot: true
+  register: create
+
+- debug:
+    var: create
+
+- name: Ensure jail is started
+  iocage:
+    name: test
+    release: 11.2-RELEASE
+    state: started
+  register: start
+
+- debug:
+    var: start
+
+- name: Ensure jail is stopped
+  iocage:
+    name: test
+    release: 11.2-RELEASE
+    state: present
+  register: stop
+
+- debug:
+    var: stop
+
+- name: Ensure jail is stopped
+  iocage:
+    name: test
+    release: 11.2-RELEASE
+    state: absent
+  register: destroy
+
+- debug:
+    var: destroy
