@@ -3,6 +3,9 @@ Ansible iocage test
 This Project is used to test the 
 [ansible iocage module](https://github.com/Corvan/ansible/blob/features/iocage/lib/ansible/modules/system/iocage.py)
 
+The most interesting file to see how the module is used for testing is
+[roles/app_ansible_test/tasks/iocage.yml](roles/app_ansible_test/tasks/iocage.yml)
+
 Vagrant
 --------
 Because not everybody has got a FreeBSd at hand, this project comes
