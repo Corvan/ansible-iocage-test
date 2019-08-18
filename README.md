@@ -42,6 +42,7 @@ under:
 Contributing to the module
 ---------------------------
 `git clone https://github.com/Corvan/ansible`
+
 `git checkout features/iocage`
 You'll find the module under
 `lib/modules/system/iocage.py`
