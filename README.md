@@ -9,7 +9,7 @@ The most interesting file to see how the module is used for testing is
 Vagrant
 --------
 Because not everybody has got a FreeBSd at hand, this project comes
-with a vagrant box definition file based on VirtualBox. Got to 
+with a vagrant box definition file based on VirtualBox. Go to 
 [the vagrant website](https://www.vagrantup.com/) and 
 download vagrant; install it afterwards
 
